@@ -1,0 +1,29 @@
+[gd_scene load_steps=6 format=3 uid="uid://cd3ry2hr41ff6"]
+
+[ext_resource type="Script" uid="uid://c2yicu30rl2ia" path="res://level.gd" id="1_n6hdu"]
+
+[sub_resource type="Environment" id="Environment_oi3di"]
+background_mode = 1
+background_color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_oi3di"]
+flip_faces = true
+size = Vector3(232, 16, 232)
+
+[node name="Level" type="Node3D"]
+script = ExtResource("1_n6hdu")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_oi3di")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 0, 0)
+
+[node name="Pillars" type="Node3D" parent="."]
+
+[node name="Room" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 116, 22, 116)
+mesh = SubResource("BoxMesh_oi3di")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 109.593, 179.178, 115.829)
