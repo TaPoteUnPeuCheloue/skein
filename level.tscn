@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://cd3ry2hr41ff6"]
 
-[ext_resource type="Script" uid="uid://c2yicu30rl2ia" path="res://level.gd" id="1_n6hdu"]
+[ext_resource type="Script" uid="uid://c2yicu30rl2ia" path="res://logic.gd" id="1_n6hdu"]
 
 [sub_resource type="Environment" id="Environment_oi3di"]
 background_mode = 1
